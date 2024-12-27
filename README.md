@@ -12,14 +12,13 @@ A Shiny application for **claims data** processing and **loss triangle** constru
 4. [Requirements](#requirements)  
 5. [Installation](#installation)  
 6. [Usage](#usage)  
-7. [Data Preparation](#data-preparation)  
 8. [Modules](#modules)  
    - [Data Overview Module](#data-overview-module)  
    - [Data Insights Module](#data-insights-module)  
    - [Incremental Triangles Module](#incremental-triangles-module)  
    - [Cumulative Triangles Module](#cumulative-triangles-module)  
 9. [Contributing](#contributing)  
-10. [License](#license)
+
 
 ---
 
