@@ -132,7 +132,7 @@ install.packages(c(
 **Server (dataInsightsServer):**
 - Reactively filters or summarizes data for in-app exploration.
 
-3. **Incremental Triangles Module
+3. **Incremental Triangles Module**
 **UI (incrTriUI):**
 - Allows the user to select a statutory class, define a time scale (Yearly/Quarterly/Monthly), and generate an incremental claims development triangle.
 **Server (incrTriServer):**
@@ -140,7 +140,7 @@ install.packages(c(
 - Generates a matrix or data frame representing incremental claim values over development periods.
 - Offers a download button to export the triangle as CSV
 
-4. **Cumulative Triangles Module
+4. **Cumulative Triangles Module**
 **UI (cumTriUI):**
 - Similar interface for cumulative triangles.
 **Server (incrTriServer):**
