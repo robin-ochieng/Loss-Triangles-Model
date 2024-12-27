@@ -120,30 +120,30 @@ install.packages(c(
 ## Modules
 
 1. **Data Overview Module**
-**UI (dataOverviewUI):**
+- **UI (dataOverviewUI):**
 - Displays a file upload control and a data table preview.
-**Server (dataOverviewServer):**
+- **Server (dataOverviewServer):**
 - Validates columns, parses dates, and returns a reactive dataset to other modules.
 
 2. **Data Insights Module**
-**UI (dataInsightsUI):**
+- **UI (dataInsightsUI):**
 - Typically includes charts or summary tables for deeper claims insight.
 - Includes an action button to trigger the bootstrapping analysis.
-**Server (dataInsightsServer):**
+- **Server (dataInsightsServer):**
 - Reactively filters or summarizes data for in-app exploration.
 
 3. **Incremental Triangles Module**
-**UI (incrTriUI):**
+- **UI (incrTriUI):**
 - Allows the user to select a statutory class, define a time scale (Yearly/Quarterly/Monthly), and generate an incremental claims development triangle.
-**Server (incrTriServer):**
+- **Server (incrTriServer):**
 - Aggregates data by the chosen time scale.
 - Generates a matrix or data frame representing incremental claim values over development periods.
 - Offers a download button to export the triangle as CSV
 
 4. **Cumulative Triangles Module**
-**UI (cumTriUI):**
+- **UI (cumTriUI):**
 - Similar interface for cumulative triangles.
-**Server (incrTriServer):**
+- **Server (incrTriServer):**
 - Converts incremental values into cumulative claim values.
 - Renders the resulting matrix for review and download.
 
