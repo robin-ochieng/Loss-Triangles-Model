@@ -9,6 +9,7 @@ dataOverviewUI <- function(id) {
         br(),
         br(),
         br(),
+        id = "dataUpload",
         class = "upload-container1",
         fileInput(ns("file"), 
           label = tags$span("Upload Claims Data as an Excel or CSV File", class = "upload-label"),
@@ -20,6 +21,7 @@ dataOverviewUI <- function(id) {
         hr(),
         br(), 
       div(
+          id = "dataUploadInstructions",
           class = "upload-container",
           tags$p(class = "instruction-header", "How to Prepare Data before Upload:"),
           tags$ul(
@@ -41,6 +43,7 @@ dataOverviewUI <- function(id) {
         hr(),
         br(),
           bs4Card(
+            id = "dataOverview",
             title = "Data Overview",
             status = "white",
             solidHeader = TRUE,
