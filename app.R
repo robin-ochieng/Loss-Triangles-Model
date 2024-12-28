@@ -49,9 +49,23 @@ ui <- bs4DashPage(
     tags$li(
       class = "text-center header-title-container",  # Added a new class for more specific styling
       tags$h4("Loss Triangles Dashboard", class = "header-title")
+    ),
+    tags$li(
+      class = "clock-container",
+      tags$span(
+        id = "dynamic-clock"
+      ),
+    # Tour button on the right
+    actionButton(
+      inputId = "startTour",
+      label   = "Take a Tour",
+      icon    = icon("compass"),  # Font Awesome icon for "tour/compass"
+      class   = "control-button"  # custom class from your CSS
+    )
     )
   ),
   sidebar = bs4DashSidebar(
+    id = "sidebar",
     skin = "light",
     tags$div(
       class = "menu-container",
@@ -69,8 +83,16 @@ ui <- bs4DashPage(
     tags$head(
       includeCSS("www/css/custom_styles.css"),
       tags$link(href = "https://fonts.googleapis.com/css?family=Mulish", rel = "stylesheet"),
+      tags$link(
+        rel = "stylesheet",
+        href = "https://cdn.jsdelivr.net/npm/intro.js/minified/introjs.min.css"
+      ),
+      tags$script(
+        src = "https://cdn.jsdelivr.net/npm/intro.js/minified/intro.min.js"
+      ),
       tags$script(src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"),
-      tags$link(rel = "shortcut icon", href = "favicon/kenbright.ico", type = "image/x-icon")
+      tags$link(rel = "shortcut icon", href = "favicon/kenbright.ico", type = "image/x-icon"),
+      tags$script(src = "js/custom.js")
     ),
     bs4TabItems(
       # Data Overview Tab
