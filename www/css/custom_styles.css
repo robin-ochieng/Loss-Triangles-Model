@@ -243,6 +243,48 @@ body {
   font-size: 14px !important;
 }
 
+/* www/css/custom_styles.css */
+
+/* Remove default list styling from <li> elements, if needed */
+.clock-container {
+  list-style-type: none;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;  /* Positions the clock on the far right */
+  align-items: center;
+  margin-right: 20px;         /* Adjust spacing as desired */
+}
+
+/* Style the clock text */
+#dynamic-clock {
+  font-size: 14px;
+  color: #0137A6;
+  font-weight: bold;    
+  margin-right: 15px;
+}
+
+.control-button {
+  font-size: 14px;
+  margin-right: 10px; 
+  background-color: white;
+  color: #007bff; 
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Example: change the background color of the tooltip */
+.introjs-tooltip {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Example: adjust the highlight overlay color */
+.introjs-fixedTooltip, .introjs-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 
 
 
