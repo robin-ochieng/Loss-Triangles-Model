@@ -257,7 +257,7 @@ body {
 
 /* Style the clock text */
 #dynamic-clock {
-  font-size: 14px;
+  font-size: 12px;
   color: #0137A6;
   font-weight: bold;    
   margin-right: 15px;
