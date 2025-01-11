@@ -19,7 +19,7 @@ dataOverviewUI <- function(id) {
         br())
         ),
         hr(),
-        br(), 
+        br(),         
       div(
           id = "dataUploadInstructions",
           class = "upload-container",
@@ -48,6 +48,7 @@ dataOverviewUI <- function(id) {
             status = "white",
             solidHeader = TRUE,
             width = 12,
+            class = "highlight-effect",
             DTOutput(ns("data_table"))
           )          
         )
@@ -60,6 +61,7 @@ dataOverviewUI <- function(id) {
 dataOverviewServer <- function(id) {
   moduleServer(id, function(input, output, session) {
     # Reactive value for storing the uploaded data with validation
+  
   # Reactive data loading
     data <- reactive({
       req(input$file)
