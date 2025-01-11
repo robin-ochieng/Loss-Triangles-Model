@@ -64,6 +64,7 @@ body {
 .control-button {
     font-size: 14px;
     margin-right: 10px; 
+    padding: 10px 20px;
     background-color: #007bff;
     color: white; ;
   }
@@ -73,7 +74,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: auto;
+    width: 70px;
     text-align: centre;
     padding: 5px 0; /* Add padding to give some space around the logo */
     background-color: #fff; /* Light background color to distinguish the logo area */
@@ -81,7 +82,7 @@ body {
 }
   
   .sidebar-logo img {
-    height: 70px; /* Adjust the height of the logo as needed */
+    height: 60px; /* Adjust the height of the logo as needed */
     max-width: 100%; /* Ensure the logo scales within the container */
     background-color: #ffffff; /* Optional: Add a background behind the logo */
     border-radius: 8px; /* Optional: Add rounded corners for a modern look */
@@ -104,19 +105,19 @@ body {
     justify-content: center; /* Align items to the start of the container */
     margin-left: 0; /* Match the sidebar width */
     position: relative; /* Ensure the container is positioned correctly */
-    width: 255px; /* Match the width of the sidebar-footer */
+    width: 240px; /* Match the width of the sidebar-footer */
     text-align: center; /* Center the title text */
     padding: 5px 0; /* Add padding to give some space around the title */
     background-color: #fff; /* Light background color to distinguish the title area */
     border-radius: 8px; /* Optional: Add rounded corners for a modern look */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a more professional look */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow for a more professional look */
 
 }
 
 /* Style for the header title */
 .header-title {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     color: #0137A6;
     padding-left: 5px; /* Space after the vertical line */
 }
@@ -165,34 +166,34 @@ body {
     color: #000000;
   }
 
-  /* Style for upload container */
-.upload-container1 {
-  background-color: #FFFFFF;
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid #d1d1d1; 
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  margin-bottom: 16px;
-  color: #000000;
-}
+    /* Style for upload container */
+  .upload-container1 {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #d1d1d1; 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    color: #000000;
+  }
 
-  /* Style for the list items */
-.upload-container .custom-list-item {
-  margin-bottom: 10px;       /* Add consistent spacing between list items */
-  display: flex;            /* Align icon and text horizontally */
-  align-items: center;      /* Vertically align icon with text */
-}
+    /* Style for the list items */
+  .upload-container .custom-list-item {
+    margin-bottom: 10px;       /* Add consistent spacing between list items */
+    display: flex;            /* Align icon and text horizontally */
+    align-items: center;      /* Vertically align icon with text */
+  }
 
-/* Style for sub-list items */
-.upload-container .sub-list-item .custom-list-item {
-  margin-bottom: 5px;       /* Slightly reduce spacing for sub-list items */
-}
+  /* Style for sub-list items */
+  .upload-container .sub-list-item .custom-list-item {
+    margin-bottom: 5px;       /* Slightly reduce spacing for sub-list items */
+  }
 
 
-/* Adjust icon spacing */
-.upload-container .custom-list-item i {
-  margin-right: 6px;       /* Add space to the right of the icons */
-}
+  /* Adjust icon spacing */
+  .upload-container .custom-list-item i {
+    margin-right: 6px;       /* Add space to the right of the icons */
+  }
   
   /* Style for upload file input label */
   .upload-label {
@@ -243,7 +244,23 @@ body {
   font-size: 14px !important;
 }
 
-/* www/css/custom_styles.css */
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+.btn-primary-custom-show-instructions {
+  background-color: white;
+  color: #0137A6;
+  font-size: 12px;
+  padding: 8px 16px;         /* Top/bottom and left/right padding */
+  border: 1px solid #0137A6;
+  border-radius: 5px;         /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+  transition: all 0.3s ease;  /* Smooth transition for all changes */
+}
+
+.btn-primary-custom-show-instructions:hover {
+  background-color: white;  /* Slightly darker blue on hover */
+  color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
 
 /* Remove default list styling from <li> elements, if needed */
 .clock-container {
@@ -252,27 +269,38 @@ body {
   flex: 1;
   justify-content: flex-end;  /* Positions the clock on the far right */
   align-items: center;
-  margin-right: 20px;         /* Adjust spacing as desired */
+  margin-right: 10px;         /* Adjust spacing as desired */
 }
 
 /* Style the clock text */
 #dynamic-clock {
   font-size: 12px;
   color: #0137A6;
-  font-weight: bold;    
-  margin-right: 15px;
+  border: 1px solid #0137A6;
+  padding: 8px 16px;
+  border-radius: 5px;
 }
 
 .control-button {
   font-size: 14px;
   margin-right: 10px; 
+  margin-left: 10px; 
   background-color: white;
-  color: #007bff; 
-  border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
+  color: #0137A6; 
+  border: 1px solid #0137A6; 
+  padding: 8px 16px;
+  border-radius: 5px;
   cursor: pointer;
 }
+.highlight-effect {
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+.highlight-effect:hover {
+  border: 1px solid #0137A6 !important;  /* a highlight color */
+  box-shadow: 0 0 10px rgba(1, 55, 166, 0.5);
+  cursor: pointer;
+}
+
 
 /* Example: change the background color of the tooltip */
 .introjs-tooltip {
@@ -315,7 +343,7 @@ body {
     .list-item {
       font-size: 8px;
     }
-    
+
     .sub-list-item {
       font-size: 8px;
     }
@@ -359,6 +387,22 @@ body {
     /* custom_styles.css */
     .sidebar-logo {
       position: absolute;
+  }
+
+  .control-button {
+    font-size: 8px; 
+    padding: 5px 10px;
+  }
+  
+  /* Style the clock text */
+  #dynamic-clock {
+    font-size: 8px;
+    padding: 5px 10px;
+  }
+
+  .btn-primary-custom-show-instructions {
+    font-size: 8px;
+    padding: 5px 10px;         /* Top/bottom and left/right padding */
   }
 
 }
@@ -421,6 +465,22 @@ body {
   /* custom_styles.css */
   .sidebar-logo {
     position: absolute;
+  }
+
+  .control-button {
+    font-size: 6px; 
+    padding: 4px 8px;
+  }
+  
+  /* Style the clock text */
+  #dynamic-clock {
+    font-size: 6px;
+    padding: 4px 8px;
+  }
+
+  .btn-primary-custom-show-instructions {
+    font-size: 6px;
+    padding: 4px 8px;         /* Top/bottom and left/right padding */
   }
 
 
