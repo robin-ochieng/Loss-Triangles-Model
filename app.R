@@ -52,8 +52,10 @@ ui <- bs4DashPage(
     ),
     tags$li(
       class = "clock-container",
-      tags$span(
-        id = "dynamic-clock"
+      actionButton(
+          inputId = "toggle_instructions_btn", 
+          label   = "Show Data Upload Guide", 
+          class   = "btn btn-primary btn-primary-custom-show-instructions"
       ),
     # Tour button on the right
     actionButton(
@@ -61,7 +63,10 @@ ui <- bs4DashPage(
       label   = "Take a Tour",
       icon    = icon("compass"),  # Font Awesome icon for "tour/compass"
       class   = "control-button"  # custom class from your CSS
-    )
+    ),
+    tags$span(
+      id = "dynamic-clock"
+      ),
     )
   ),
   sidebar = bs4DashSidebar(
